@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html lang="es" class="size-m">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="./assets/css/main.css" />
-        <title>Spotify</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Spotify</title>
+  </head>
 
-    <body>
+  <body>
     <header>
-        <img src="../images/Spotify-Black-Logo.wine (1).png" alt="Logo Spotify negro" />
+      <img
+        src="../images/Spotify-Black-Logo.wine (1).png"
+        alt="Logo Spotify negro"
+      />
     </header>
 
     <main>
-        <h1 class="title">Regístrate gratis para escuchar.</h1>
-        <div class="buttons">
-            <input type="submit"  value="Regístrate con Facebook" />
-            <input type="submit" value="Regístrate con Google" />
+      <h1 class="title">Regístrate gratis para escuchar.</h1>
+      <div class="buttons">
+        <input type="submit" value="Regístrate con Facebook" />
+        <input type="submit" value="Regístrate con Google" />
+      </div>
+      <p>o</p>
+      <form>
+        <legend>Registrarte con tu correo electrónico</legend>
+        <div class="form-container">
+          <label for="mail">¿Cuál es tu correo electrónico?</label>
+          <input
+            type="mail"
+            name="mail"
+            id="mail"
+            placeholder="Pon tu correo electrónico."
+          />
         </div>
-        <p>o</p>
-        <form>
-            <legend>Registrarte con tu correo electrónico</legend>
-            <div class="form-container">
-                <label for="mail">¿Cuál es tu correo electrónico?</label>
-                <input type="mail" name="mail" id="mail" placeholder="Pon tu correo electrónico." />
-            </div>
 
-            <div class="form-container">
-                <label for="confirm-mail">¿Cuál es tu correo electrónico?</label>
-                <input type="mail" name="confirm-mail" id="confirm-mail" placeholder="Vuelve a poner tu correo electrónico." />
-            </div>
+        <div class="form-container">
+          <label for="confirm-mail">¿Cuál es tu correo electrónico?</label>
+          <input
+            type="mail"
+            name="confirm-mail"
+            id="confirm-mail"
+            placeholder="Vuelve a poner tu correo electrónico."
+          />
+        </div>
 
-            <div class="form-container">
-                <label for="password">Crea una contraseña</label>
-                <input type="password" name="password" id="password" placeholder="Crea una contraseña." />
-            </div>
+        <div class="form-container">
+          <label for="password">Crea una contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Crea una contraseña."
+          />
+        </div>
 
-            <div class="form-container">
-                <label for="name">¿Cómo quieres que te llamemos?</label>
-                <input type="name" name="name" id="name" placeholder="Pon un nombre de perfil" />
-                <small>Esto aparece en tu perfil.</small>
+        <div class="form-container">
+          <label for="name">¿Cómo quieres que te llamemos?</label>
+          <input
+            type="name"
+            name="name"
+            id="name"
+            placeholder="Pon un nombre de perfil"
+          />
+          <small>Esto aparece en tu perfil.</small>
+        </div>
 
-            </div>
+        <div class="form-container">
+          <label for="name">¿Cuál es tu fecha de nacimiento?</label>
+          <label for="day">Día</label>
+          <input type="number" name="day" id="day" placeholder="DD" />
+          <label for="month">Mes</label>
+          <select id="month" name="month" placeholder="Mes">
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Novembre</option>
+            <option>Deciembre</option>
+          </select>
+          <label for="year">Año</label>
+          <input type="number" name="year" id="year" placeholder="AAAA" />
+        </div>
 
-            
-        </form>
+        <div>
+          <label for="Géneros">¿Cuál es tu género?</label>
+          <input type="radio" name="radio" id="Hombre" />
+          <label for="Hombre">Hombre</label>
+          <input type="radio" name="radio" id="Mujer" />
+          <label for="Mujer">Mujer</label>
+          <input type="radio" name="radio" id="No binario"
+        </div>
 
+        <div>
+          <input type="checkbox" name="radio" id="news" />
+          <label for="Hombre"
+            >Quiero que me envieis novedades y ofertas de Spotify</label
+          >
+          <input type="checkbox" name="checkbox" id="Compartir" />
+          <label for="Compartir"
+            >Compartir mis datos de registro con los proveedores de contenidos
+            de Spotify para fines de marketing. Ten en cuenta que tus datos
+            pueden ser transferidos a un país de fuera del EEE, tal y como se
+            recoge en nuestra Política de Privacidad.
+          </label>
+        </div>
 
-
-
+        <input type="submit" value="Registrarte" />
+        <p>
+          ¿Ya tienes cuenta?<span
+            ><a rel="Iniciar sesión" href="#">Inicia sesión</a></span
+          >.
+        </p>
+      </form>
     </main>
-
-    </body>
+  </body>
+</html>
